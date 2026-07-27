@@ -1,8 +1,28 @@
 aid: freckle-education
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/freckle-education.png
 name: Freckle Education
-description: Freckle Education is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Freckle is an adaptive learning platform from Renaissance that delivers
+  differentiated, standards-aligned math and English Language Arts (ELA) practice
+  for K-12 students. Teachers assign work and monitor progress while students
+  practice at their own level, with the platform adapting question difficulty to
+  each learner across 70,000+ math questions and 1,000+ ELA passages.
+  Administrators manage rosters and dashboards at the school and district level.
+  Freckle is a school- and classroom-facing application acquired by Renaissance
+  Learning; it does not currently publish a public developer API, SDKs, or a
+  developer portal, so this profile captures its identity, published web
+  properties, and probed domain-security posture rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/freckle-education/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- EdTech
+- K-12
+- Adaptive Learning
+- Mathematics
+- English Language Arts
+- Renaissance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +51,24 @@ maintainers:
 common:
 - type: Website
   url: https://freckle.com
+- type: SignUp
+  url: https://classroom.freckle.com/signup
+- type: Login
+  url: https://classroom.freckle.com/login
+- type: Support
+  url: https://www.renaissance.com/support-center/
+- type: HelpCenter
+  url: https://frecklehelp.renaissance.com/hc/en-us
+- type: Blog
+  url: https://www.renaissance.com/resources/blog/
+- type: PrivacyPolicy
+  url: https://renaissance.com/privacy
+- type: TermsOfService
+  url: https://www.renaissance.com/terms-of-use/
+- type: DomainSecurity
+  url: security/freckle-education-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
